@@ -1,0 +1,56 @@
+html {
+    background-color: black;
+}
+
+.ojoiz {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    left: 25%;
+    top: 25%;
+}
+
+.puntoiz {
+    position: relative;
+    width: 50px;
+    height: 100px;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.ojoder {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    left: 50%;
+    top: 25%;
+}
+
+.puntoder {
+    position: relative;
+    width: 50px;
+    height: 100px;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.brillo {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: azure;
+    left: 65%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
