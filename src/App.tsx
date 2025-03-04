@@ -6,7 +6,7 @@ function App() {
   const pcURL = "https://www.itch.io";
   const andURL = "https://www.itch.io";
   const ofURL = "https://www.itch.io";
-  const imVN = "src/static/img/tos.png";
+  const imVN = "./src/static/img/tos.png";
   return (
     <>
       <Card
