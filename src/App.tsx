@@ -25,12 +25,12 @@ function App() {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <a className="nav-link" href="#translate-vns">
-                  Novelas Visuales traducidas por mi.
+                  Novelas Visuales traducidas por mi
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about">
-                  Sobre mí
+                <a className="nav-link" href="#payme">
+                  Apóyame
                 </a>
               </li>
               <li className="nav-item">
@@ -65,7 +65,7 @@ function App() {
         </div>
       </section>
       <br />
-      <section id="about">
+      <section id="payme">
         <div>
           <IFrame />
         </div>

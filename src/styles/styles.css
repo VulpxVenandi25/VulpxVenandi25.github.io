@@ -29,3 +29,10 @@ body {
   border-radius: 25%;
   color: #ffffff;
 }
+
+.frame-css {
+  border: none;
+  width: 100%;
+  padding: 4px;
+  background: #f9f9f9;
+}
