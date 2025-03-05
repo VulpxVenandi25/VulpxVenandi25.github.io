@@ -1,0 +1,31 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.bg-img {
+  width: 400px;
+  height: 300px;
+}
+
+#about,
+#projects,
+#contact {
+  padding: 60px 0;
+}
+
+.card {
+  transition: transform 0.3s ease;
+  width: 100%; /* Ajusta el ancho de la tarjeta */
+  max-width: 400px; /* Establece un ancho máximo */
+  margin: 0 auto; /* Centra la tarjeta horizontalmente */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.mark-bg {
+  background: #0000007a;
+  border-radius: 25%;
+  color: #ffffff;
+}

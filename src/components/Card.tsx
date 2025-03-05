@@ -1,3 +1,5 @@
+import "../styles/styles.css";
+
 interface Props {
   nombre: string;
   description: string;
@@ -10,26 +12,34 @@ interface Props {
 function Card(props: Props) {
   const { nombre, description, pcURL, andURL, ofURL, imVN } = props;
   return (
-    <>
-      <h1>{nombre}</h1>
-      <p>{description}</p>
-      <img src={imVN} />
-      <div className="container text-center">
-        <p>Links</p>
-        <div className="row align-items-center"></div>
-        <div className="col">
-          <a href={pcURL}>
-            <button className="btn-primary">Windows-linux</button>
-          </a>
-          <a href={andURL}>
-            <button className="btn-primary">Android</button>
-          </a>
-        </div>
-        <div className="col">
-          <a href={ofURL}>Página oficial.</a>
+    <div className="card text-bg-dark bg-img">
+      <img src={imVN} className="card-img" alt="Background" />
+      <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+        <h5 className="card-title text-center">
+          <mark className="mark-bg">{nombre}</mark>
+        </h5>
+        <p className="card-text text-center">
+          <mark className="mark-bg">{description}</mark>
+        </p>
+        <div className="container text-center">
+          <div className="row align-items-center">
+            <div className="col">
+              <a className="btn btn-primary m-1" href={pcURL} download>
+                Windows-linux
+              </a>
+              <a className="btn btn-danger m-1" href={andURL} download>
+                Android
+              </a>
+            </div>
+          </div>
+          <div className="col">
+            <a href={ofURL} target="_blank">
+              <mark className="mark-bg">Página oficial</mark>
+            </a>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
