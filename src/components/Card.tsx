@@ -24,10 +24,20 @@ function Card(props: Props) {
         <div className="container text-center">
           <div className="row align-items-center">
             <div className="col">
-              <a className="btn btn-primary m-1" href={pcURL} download>
+              <a
+                className="btn btn-primary m-1"
+                href={pcURL}
+                target="_black"
+                download
+              >
                 Windows-linux
               </a>
-              <a className="btn btn-danger m-1" href={andURL} download>
+              <a
+                className="btn btn-danger m-1"
+                href={andURL}
+                target="_black"
+                download
+              >
                 Android
               </a>
             </div>
