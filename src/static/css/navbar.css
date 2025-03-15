@@ -1,0 +1,19 @@
+:root {
+  --SteelBlue-color: #2973b2; /* Primario */
+  --CadetBlue-color: #48a6a7;
+  --Light-Blue-color: #9acbd0;
+  --Linen-color: #f2efe7;
+  --MidnightBlue-color: #0d1a48;
+}
+
+.cm-navbar {
+  background-color: var(--SteelBlue-color);
+}
+
+.cm-navbar a {
+  color: var(--Linen-color);
+}
+
+.cm-navbar a:hover {
+  color: var(--MidnightBlue-color);
+}
