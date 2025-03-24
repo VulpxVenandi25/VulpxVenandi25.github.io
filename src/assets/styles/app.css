@@ -1,0 +1,6 @@
+@import url("./index.css");
+
+body {
+  background-color: var(--color-bg-Linen);
+  font-family: Georgia, serif;
+}
