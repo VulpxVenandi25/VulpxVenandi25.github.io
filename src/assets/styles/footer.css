@@ -1,0 +1,16 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.link {
+  padding: 10px;
+}
+
+.link:hover {
+  transform: scale(1.1);
+  transition-duration: 0.03s;
+}
