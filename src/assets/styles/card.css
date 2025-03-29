@@ -1,0 +1,71 @@
+@import url("../styles/index.css");
+
+.card-project {
+  background-color: var(--color-bg-Linen);
+  margin: 10px;
+  width: 400px;
+  height: auto;
+}
+
+.card-project:hover {
+  transform: scale(1.03);
+  transition-duration: 0.03s;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.text-body-secondary {
+  font-style: italic;
+  text-align: center;
+}
+
+.card-project-link {
+  background-color: var(--color-secondary-LightSeaGreen);
+  border-radius: 10px;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.card-project-link:hover {
+  background-color: var(--color-secondary-CadetBlue);
+}
+
+/* Seccion de novelas */
+.card-novel {
+  width: 400px;
+  position: relative;
+  height: auto;
+  margin: 10px;
+}
+
+.card-novel:hover {
+  transform: scale(1.03);
+  transition-duration: 0.03s;
+}
+
+.card-novel:hover h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2.5em;
+  transition-duration: 0.05s;
+}
+
+.card-novel-title {
+  color: white;
+  mix-blend-mode: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.819);
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-novel-links {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
