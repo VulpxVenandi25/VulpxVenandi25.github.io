@@ -69,3 +69,42 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Card para los amigos */
+.card-friend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card-friend:hover {
+  transform: scale(1.05);
+  filter: sepia(0.5);
+  transition: all 0.3s ease;
+  transition-duration: 0.03s;
+}
+
+.friend-hovered {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.friend-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.friend-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.friend-button {
+  margin: 1px;
+}

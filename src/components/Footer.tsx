@@ -37,6 +37,12 @@ function Footer() {
             alt="Patreon"
           />
         </a>
+        <a href="https://ko-fi.com/vulpxvenandi25" target="_blank">
+          <img className="link" src="/img/social/ic-kofi.png" alt="Ko-Fi" />
+        </a>
+        <a href="https://www.wattpad.com/user/VulpxVenandi25" target="_blank">
+          <img className="link" src="/img/social/ic-wattpad.png" alt="Ko-Fi" />
+        </a>
       </div>
       <span>
         Íconos sacados de{" "}

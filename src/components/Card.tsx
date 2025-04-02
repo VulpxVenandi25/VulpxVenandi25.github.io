@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../assets/styles/card.css";
 
@@ -15,6 +16,12 @@ interface NovProps {
   andURL: string;
   pcURL: string;
   ofURL: string;
+}
+
+interface FriendProps {
+  image: string;
+  name: string;
+  links: { text: string; link: string }[];
 }
 
 function ProjectCard(props: Props) {
@@ -77,5 +84,61 @@ function NovelCard(props: NovProps) {
   );
 }
 
-export { NovelCard };
+function FriendCard(props: FriendProps) {
+  const { image, name, links } = props;
+  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+  return (
+    <div
+      className="card card-friend"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      {!isHovered ? (
+        <>
+          <img
+            src={image}
+            className="card-img-top card-friend-img"
+            alt={name}
+          />
+        </>
+      ) : (
+        <>
+          <div className="friend-hovered">
+            <div className="friend-content">
+              <img src={image} />
+            </div>
+            <div className="friend-content">
+              <h1>{name}</h1>
+              <div className="friend-buttons">
+                {links.length > 0 ? (
+                  links.map((links, index) => (
+                    <a
+                      key={index}
+                      href={links.link}
+                      className="btn btn-primary btn-sm m-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {links.text}
+                    </a>
+                  ))
+                ) : (
+                  <p className="text-muted">Sin redes disponibles</p>
+                )}
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+export { NovelCard, FriendCard };
 export default ProjectCard;

@@ -1,10 +1,10 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
+import Friends from "./pages/Friends";
 import Home from "./pages/Home";
 import Novels from "./pages/Novels";
 import Project from "./pages/Projects";
-import Social from "./pages/Social";
 import "./assets/styles/index.css";
-import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -41,8 +41,8 @@ export default function App() {
                 <Link to="/novels" className="nav-link">
                   Novelas Traducidas
                 </Link>
-                <Link to="/social" className="nav-link">
-                  Redes
+                <Link to="/friends" className="nav-link">
+                  Amigos
                 </Link>
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Project />} />
             <Route path="/novels" element={<Novels />} />
-            <Route path="/social" element={<Social />} />
+            <Route path="/friends" element={<Friends />} />
           </Routes>
         </main>
       </BrowserRouter>
