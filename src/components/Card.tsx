@@ -28,15 +28,23 @@ function ProjectCard(props: Props) {
   const { title, background, state, description, link } = props;
   return (
     <div className="card card-project mb-3">
-      <img className="card-img-top" src={background} alt={title} />
+      <img
+        src={background}
+        alt={title}
+        loading="lazy"
+        className="card-img-top"
+      />
       <div className="card-body">
         <h1 className="card-title">{title}</h1>
+        <span className="text-body-secondary">{state}</span>
         <p className="card-text">{description}</p>
-        <p>
-          <small className="text-body-secondary">{state}</small>
-        </p>
-        <a className="card-project-link" href={link} target="_blank">
-          Ver proyecto
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-project-link"
+        >
+          Ver Proyecto
         </a>
       </div>
     </div>
@@ -140,5 +148,4 @@ function FriendCard(props: FriendProps) {
   );
 }
 
-export { NovelCard, FriendCard };
-export default ProjectCard;
+export { NovelCard, FriendCard, ProjectCard };
