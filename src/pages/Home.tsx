@@ -82,7 +82,7 @@ function Home() {
 
         <div className="text-center mt-4">
           <a
-            href="https://1024terabox.com/s/1L-GAGHOrCfQvChpL_4O9Zw"
+            href="https://terabox.com/s/1BH1epgCdYnn-yFWZHqtcSw"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"
