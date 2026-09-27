@@ -5,6 +5,41 @@
     <link rel="icon" href="/images/logo.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script>
+      // Debe ejecutarse ANTES del primer pintado: aplica el tema guardado y
+      // precarga su imagen de fondo. Sin esto la pagina pinta primero el fondo
+      // del tema por defecto (ruber) y luego lo cambia, un fogonazo visible.
+      (function () {
+        var FONDO = {
+          ruber: "/images/themes/bg/ruber.webp",
+          shin: "/images/themes/bg/shin.webp",
+          axel: "/images/themes/bg/axel.webp",
+          gil: "/images/themes/bg/gil.webp",
+          ken: "/images/themes/bg/ken.webp",
+          lin: "/images/themes/bg/lin.webp",
+          nauxus: "/images/themes/bg/nauxus.webp",
+          spencer: "/images/themes/bg/spencer.webp",
+        };
+
+        var tema = null;
+        try {
+          tema = localStorage.getItem("theme");
+        } catch (e) {
+          /* modo privado o localStorage bloqueado */
+        }
+        if (!FONDO[tema]) tema = "ruber";
+
+        document.documentElement.setAttribute("data-theme", tema);
+
+        var preload = document.createElement("link");
+        preload.rel = "preload";
+        preload.as = "image";
+        preload.type = "image/webp";
+        preload.href = FONDO[tema];
+        document.head.appendChild(preload);
+      })();
+    </script>
+
     <title>VulpxVenandi25 | Novelas Visuales y Demás</title>
     <meta
       name="description"
@@ -34,8 +69,8 @@
     <meta name="twitter:image" content="/images/logo.jpg" />
 
     <link rel="canonical" href="https://vulpxvenandi25.github.io/" />
-    <script type="module" crossorigin src="/assets/index-nvwOVwYN.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Csu15X5V.css">
+    <script type="module" crossorigin src="/assets/index-DigIceXI.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C7Ph9FsV.css">
   </head>
   <body>
     <div id="root"></div>
